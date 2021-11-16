@@ -14,4 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo Spiderman, Hulk, Captain America, Black Widow, 
+      - run: echo Spiderman, Hulk, Captain America, Black Widow
+  
+  thor:
+    runs-on: ubuntu-latest
+    needs: [bestHero, avengers]
+    steps:
+      - uses: actions/checkout@v2
+      - run: 
+            echo Kde mám kladivo?!
+            echo Ragnarok
