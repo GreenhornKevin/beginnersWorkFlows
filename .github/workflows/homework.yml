@@ -1,0 +1,13 @@
+name: TNT
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  participates: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo Kevin, Robert, Kristýna, Tereza, Michael
