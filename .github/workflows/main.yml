@@ -1,9 +1,7 @@
 name: Github-CI/CD
 
 on:
-  push:
-    branches:
-    - main
+  [push]
   
 jobs:
   apiRobotTest:
