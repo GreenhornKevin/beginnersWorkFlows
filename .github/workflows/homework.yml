@@ -6,8 +6,22 @@ on:
     - main
 
 jobs:
+  boss:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo Marcel Veselka
+      
   participates: 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: echo Kevin, Robert, Kristýna, Tereza, Michal
+      
+  tools:
+    runs-on: ubuntu-latest
+    needs: [participates, boss]
+    steps:
+      - uses: actions/checkout@v2
+      - run:  echo Postman
+              echo Git
